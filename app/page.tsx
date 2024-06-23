@@ -159,7 +159,7 @@ const onLoadedMetadata = () => {
 
 <motion.div 
 transition={{duration:0.3}}
-animate={open?{height:550}: {height:100}}
+animate={open?{height:500}: {height:100}}
 initial={{height:100}}
 className="fixed inset-x-0 top-0 flex flex-col items-center rounded-b-[50px] border-x border-b border-white bg-white bg-opacity-30 pb-8 backdrop-blur-sm dark:bg-black dark:border-none dark:bg-opacity-70 "
 >
