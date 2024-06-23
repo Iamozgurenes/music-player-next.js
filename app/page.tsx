@@ -272,7 +272,7 @@ className="fixed inset-x-0 top-0 flex flex-col items-center rounded-b-[50px] bor
               </div>
 
                 <Image
-                className="w-16 rounded-xl object-contain "
+                className="w-16 h-16 rounded-xl object-contain "
                 src={playList[currentMusicIndex].imgSrc}
                 alt={''}
                 loading="lazy"
