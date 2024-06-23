@@ -178,8 +178,8 @@ className="fixed inset-x-0 top-0 flex flex-col items-center rounded-b-[50px] bor
 
     </div>
     <div className="mt-4 flex flex-col items-center dark:text-white">
-      <span className="text-shadow text-xl font-medium">Now Playing</span>
-      <span className="text-base font-medium opacity-70">ALBUM</span>
+      <span className="text-shadow text-xl font-medium">Özgür Enes</span>
+      <span className="text-base font-medium opacity-70">Dünyanın Karşısındaki Ev</span>
     </div>
     <div onClick={() => setDark(!dark)}
       className='borderKenarr flex h-14 w-14 items-center justify-center rounded-full bg-white bg-opacity-50 backdrop:blur-sm'>
