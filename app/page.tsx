@@ -74,6 +74,12 @@ export default function Home() {
       srcMusic: "/music/dunyabukuldu.mp3",
       imgSrc: "/images/biz.jpg"
     },
+    {
+      title: "Tepki",
+      fullName: "LAMBALAR VE KELEBEK - Tepki",
+      srcMusic: "/music/lambalar.mp3",
+      imgSrc: "/images/bxtu.jpg"
+    },
   ]);
 
 const [playList , setPlayList] = useState<Array<{title: string, fullName: string , srcMusic: string, imgSrc: string}>>(
