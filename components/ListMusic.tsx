@@ -22,7 +22,7 @@ export default function ListMusic(item : Iitem) {
             >
 
                 <Image
-                    className="w-20 rounded-xl object-contain"
+                    className="w-20 h-20 rounded-xl object-cover"
                     src={ele.imgSrc}
                     alt={''}
                     loading="lazy"
@@ -32,7 +32,7 @@ export default function ListMusic(item : Iitem) {
                 />
 
                 <div className='flex flex-col text-left dark:text-white'>
-                    <span className='font-bold'>{ele.fullName}</span>
+                    <span className='font-bold text-sm '>{ele.fullName}</span>
                 </div>
 
             </div>

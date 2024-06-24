@@ -165,7 +165,7 @@ const onLoadedMetadata = () => {
 
 <motion.div 
 transition={{duration:0.3}}
-animate={open?{height:500}: {height:100}}
+animate={open?{height:700}: {height:100}}
 initial={{height:100}}
 className="fixed inset-x-0 top-0 flex flex-col items-center rounded-b-[50px] border-x border-b border-white bg-white bg-opacity-30 pb-8 backdrop-blur-sm dark:bg-black dark:border-none dark:bg-opacity-70 "
 >
@@ -265,7 +265,7 @@ className="fixed inset-x-0 top-0 flex flex-col items-center rounded-b-[50px] bor
       )}
 
 
-      {open ? (
+      {!open ? (
         <div className="fixed inset-x-0 bottom-0 flex flex-col items-center rounded-t-[50px] border-x border-t border-white bg-white bg-opacity-30 pb-5 backdrop-blur-sm dark:border-none dark:bg-black dark:bg-opacity-70">
           <div className="mt-6 h-[5px] w-32 rounded-full bg-black bg-opacity-50 backdrop-blur-sm dark:bg-white dark:bg-opacity-70"/>
             
@@ -314,37 +314,7 @@ className="fixed inset-x-0 top-0 flex flex-col items-center rounded-b-[50px] bor
 
             </div>
       ) : (
-        <div className="fixed inset-x-0 bottom-0 flex flex-col items-center rounded-t-[50px] border-x border-t border-white bg-black bg-opacity-30 pb-16 backdrop-blur-sm dark:border-none dark:bg-opacity-70">
-            <div className="mt-6 h-[5px] rounded-full bg-black bg-opacity-50 backdrop-blur-sm dark:bg-white dark:bg-opacity-70"/>
-                <span className="mt-6 text-center  font-semibold dark:text-white">{playList[currentMusicIndex].fullName}</span>
-                <span className=" text-opacity-70 dark:text-white">{playList[currentMusicIndex].title}</span>
-       
-                      <ProgressBar
-              progrezssBarRef={progressBarRef}
-              audioPlayer={audioPlayer}
-              musicList={musicList}
-              setPlayList={setPlayList}
-              repeatSong={repeatSong}
-              setCurrentSongÇ={setCurrentMusicIndex}
-              currentSong={currentMusicIndex}
-              playAnimationRef={playAnimationRef}
-              setRepeatSong={setRepeatSong}
-              duration={duration}
-              setTime={setTime}
-              time={time}
-            />
-
-            <Controls
-            playPause={playPause}
-            isPlayMusic={isPlayMusic}
-            audioPlayer={audioPlayer}
-            currentSong={currentMusicIndex}
-            setCurrentSong={setCurrentMusicIndex}
-            musicList={musicList}
-            />
-       
-       
-        </div>
+    <></>
       )}
 
 
